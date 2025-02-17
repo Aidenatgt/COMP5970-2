@@ -3,13 +3,50 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
         <title>Math</title>
     </head>
     <body>
         <form style="display:inline" action="index.html" method="get">
-            <button>Home</button>
+            <button><h1>Home</h1></button>
         </form>
         <hr>
-        <h1>Math</h1>
+        
+        <div class="subject">
+            <h1>Math</h1>
+            <p>Here's a couple of my more impressive math projects.</p>
+
+            <ul>
+                <li>
+                    <h2>Better Interference Predicitons</h2>
+                    <p style="width: 50%;">
+                        One of the most unintuitive results to a science experiment is that of the Double Slit experiment and the variations of it.
+                        What this shows is that particles travel as probablility waves which can interfere with each other. Given the frequency 
+                        of the wave, distance between the sources, and distance to a screen parallel to the line drawn through the sources, there
+                        is a formula that is 
+                        <a href="https://courses.lumenlearning.com/suny-physics/chapter/27-3-youngs-double-slit-experiment/#:~:text=An%20interference%20pattern%20is%20obtained,the%20order%20of%20the%20interference.">pretty readily available</a>. 
+                        However, that's assuming that there are only two sources. What if there's any number of sources at any position? I got into 
+                        solving this problem when the pattern is projected onto either a plane some distance away or a radius some distance from the 
+                        origin. For each of these I also found the limit as the distance goes to infinity.
+                    </p>
+                    <img src="InterferenceMapping.png" alt="Interference pattern mapped onto a cylindrical screen" style="width: 25%;">
+                </li>
+                <li>
+                    <h2>Minimum Dominating Set</h2>
+                    <p style="width: 50%;">
+                        The <a href="https://mathworld.wolfram.com/MinimumDominatingSet.html">Minimum Dominating Set</a> problem is an NP-Complete problem 
+                        where given a graph, you must find the minimal set of vertexes 
+                        that spans the entire graph. I managed to define a uniform circuit family that can solve this problem in a linear time complexity. 
+                        This seems rediculous because it's an NP-Complete problem, but it has exponential space complexity and uses layers that are massive. 
+                        Each layer only needs information from the previous one and all operations on each layer are done concurrently, so while the number 
+                        of layers is linear the number of operations is still exponential. Nevertheless, it's one of the more impressive things I've done. 
+                        It works by using a set of recursive bitwise operations that can each process a bunch of comparisons in a single step.
+                        The picture below is of the output from simulating a circuit for a graph with 4 nodes. 41 steps to find the minumum set of this 
+                        isn't very good, but this is with no optimizaitons and it grows linearly with each added node.
+                    </p>
+                    <img src="MinDomSet.png" alt="Minimum Dominating Set Simulation Results" style="width: 25%;">
+                </li>
+            </ul>
+        </div>
     </body>
 </html>

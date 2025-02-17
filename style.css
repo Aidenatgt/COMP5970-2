@@ -1,3 +1,23 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-color: "#b3d6e8";
+    background-color: #b3d6e8;
+}
+
+div.subject {
+    width: 75%;
+    border: 5px solid black;
+    padding: 7px;
+    margin: 10px;
+    background-color: lightgray;
+}
+
+div.tangent {
+    width: 25%;
+    border: 5px solid black;
+    padding: 7px;
+    margin: 10px;
+    background-color: gray;
 }

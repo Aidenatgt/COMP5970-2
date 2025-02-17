@@ -3,26 +3,49 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
         <title>Coding</title>
     </head>
     <body>
         <form style="display:inline" action="index.html" method="get">
-            <button>Home</button>
+            <button><h1>Home</h1></button>
         </form>
         <hr>
-        <h1>Coding</h1>
-        <p>These are some of the things I've worked on for fun in my free time.</p>
+        
+        <div class="subject">
+            <h1>Coding</h1>
+            <p>These are some of the things I've worked on for fun in my free time.</p>
 
-        <ul>
-            <li>
-                picasso
-            </li>
-            <li>
-                Arch Linux
-            </li>
-            <li>
-                Neural Network
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <h2>picasso</h2>
+                    <p style="width: 50%;">
+                        (Picture In Computed ASCII Style with Scripted Operations)
+                        This is a program I wrote using Rust to take a reference image and generate corresponding ASCII art.
+                    </p>
+                    <img src="another_tiger.png" alt="ASCII Tiger" style="width: 25%;">
+                </li>
+                <li>
+                    <h2>Arch Linux</h2>
+                    <p style="width: 50%;">
+                        I took the base distribution of Arch Linux and built my own desktop on it using the Hyprland compositor. 
+                        It is a fully featured desktop, and because I've added everything myself including only what I think I want, 
+                        there's very little background processing. At any given moment if I'm not actively using the computer, 
+                        background processes use about half of a percent of my CPU's power.
+                    </p>
+                    <img src="desktop.png" alt="My Desktop" style="width: 25%;">
+                </li>
+                <li>
+                    <h2>Neural Network</h2>
+                    <p style="width: 50%;">
+                        In high school I did a project to predict changes in the stock market using TensorFlow with python. 
+                        At an internship after freshman year, I created a similar program to predict which counties were most likely 
+                        to invest in the companie's product. Given how useful neural networks have been in my life already, I decided to
+                        write a neural network library in Rust. It's basic and has no advantage over any existing library, but now 
+                        I know how to do it.
+                    </p>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
